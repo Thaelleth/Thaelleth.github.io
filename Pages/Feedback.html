@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> My Portfolio </title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Portfolio">
+        <meta name="description" content="Portfolio website for Game Projects made during studies">
+        <meta name="author" content="Koivula, Aki">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../Styles/Style.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- All things header -->
+            <div class="header">   
+                <h1> My portfolio </h1>
+                <h3> Projects thus far </h3>
+            </div>
+            <!-- Navigation bar to help with navigating the website -->
+            <div class="nav_bar">
+                <ul>
+                    <li> <a href="../index.html"> Home </a> </li>
+                    <li> <a href="Projects_Overview.html"> Projects Overview </a> </li>
+                    <li> <a href="Flappy_Bird_Clone.html"> Flappy Bird Clone </a> </li>
+                    <li> <a href="HoverCraft_Platformer.html"> Hovercraft platformer </a> </li>
+                    <li> <a href="AimTrainer.html"> AimTrainer </a> </li>
+                    <li> <a href="Project_X.html"> Project X </a> </li>
+                    <li> <a href="Feedback.html" class="active_page"> Feedback </a> </li>
+                </ul>
+            </div>
+            <!-- Content section holds all the text, images and other stuff using different layouts: Single column, Dual column and Dual row. These were made to make it easier to create varying pages -->
+            <div class="content">
+                <div class="dual_column"> 
+                    <div class="column">
+                        <h2> Feedback </h2>
+                        <p> Any feedback is appreciated. </p>
+                        <form class="feedback_form" action="#">
+                            <label> Signature: </label>
+                            <br>
+                            <input type="text" value="Anonymous" required="required">
+                            <br>
+                            <label> Which project: </label>
+                            <br>
+                            <select name="Project">
+                                <option value="Website"> This website </option>
+                                <option value="Flappy"> Flappy Bird Clone </option>
+                                <option value="Hovercraft"> Hovercraft Platformer </option>
+                                <option value="AimTrainer"> AimTrainer </option>
+                                <option value="ProjectX"> Project X </option>
+                            </select>
+                            <br>
+                            <br>
+                            <label> Was there a problem? Liked my work so far? Add a short comment here to help me sort through any feedback (basically what your feedback is about. In short...): </label>
+                            <br>
+                            <input type="text" required="required">
+                            <br>
+                            <label> Any lengthier explanation goes here: </label>
+                            <textarea name="feedbackText" required="required"></textarea>
+                            <br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <div class="column">
+                        <h2> Info </h2>
+                        <p> None of the feedback left on this page will go anywhere. This site is not my prioprity at this time. Pressing the submit button does nothing. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Remember to change this... -->
+            <div class="modification_date">
+                <p> Last modified: 16.10.2019 </p>
+            </div>
+            <!-- Copyright and "contact" -->
+            <div class="footer">
+                <p> Copyright © 2019 Aki Koivula </p>
+            </div>
+        </div>
+    </body>
+</html>
