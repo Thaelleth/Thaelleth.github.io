@@ -1,0 +1,8 @@
+<!-- Navigation bar to help with navigating the website -->
+<div class="nav_bar">
+    <ul>
+        {% for item in site.data.nav_bar %}
+        <li> <a href="{{ item.link }}" {% if page.url == item.link %} class="active_page"{% endif %}> {{ item.name }} </a> </li>
+        {% endfor %}
+    </ul>
+</div>

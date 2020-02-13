@@ -1,0 +1,12 @@
+- name: Home
+  link: /index.html
+- name: Projects Overview
+  link: /Projects_Overview.html
+- name: Flappy Bird Clone
+  link: /Flappy_Bird_Clone.html
+- name: Hovercraft platformer
+  link: /HoverCraft_Platformer.html
+- name: AimTrainer
+  link: /AimTrainer.html
+- name: Project X
+  link: /Project_X.html

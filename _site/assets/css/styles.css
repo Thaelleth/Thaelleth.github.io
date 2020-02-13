@@ -1,0 +1,74 @@
+/* Website wide styling */
+* { box-sizing: border-box; font-size: 20px; /* Set the general font size */ }
+
+body { margin: 0; background-color: black; color: white; }
+
+img { width: 100%; max-width: 1920px; /* Prevents images from being scale up from my own screen size. In other words: any screenshots can't scale larger than their original size */ }
+
+.container { width: 80%; min-width: 400px; margin: auto; }
+
+/* Header styling */
+.header { width: 20%; /* Header uses 20% of the container width OR at minimum 240px */ min-width: 240px; /* This is to prevent any word wrapping */ margin: auto; text-align: center; border-radius: 25px; padding: 10px; background-color: darkblue; }
+
+/* NavBar styling */
+.nav_bar ul { width: 100%; display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
+
+.nav_bar ul li { list-style: none; margin: 5px; padding: 10px; }
+
+.nav_bar a { text-decoration: none; background-color: darkblue; border-radius: 10px; color: white; padding: 15px; }
+
+.nav_bar a:hover, a:active { background-color: lightblue; color: black; }
+
+.nav_bar .active_page { background-color: darkcyan; color: black; }
+
+/* Content element styling */
+.content { width: 100%; display: flex; flex-direction: column; justify-content: center; }
+
+.content .single_column { width: 80%; margin: auto; margin-bottom: 30px; border-radius: 20px; padding: 20px; background-color: darkgray; color: black; }
+
+.content .dual_column { width: 80%; display: flex; flex-wrap: wrap; flex-direction: row; margin: auto; margin-bottom: 30px; border-radius: 20px; padding: 20px; background-color: darkgray; color: black; }
+
+.dual_column .column { width: 50%; padding: 20px; }
+
+.content .dual_row { width: 80%; display: flex; flex-wrap: wrap; flex-direction: column; margin: auto; margin-bottom: 30px; border-radius: 20px; padding: 20px; background-color: darkgray; color: black; }
+
+.dual_row .row { padding: 10px; }
+
+.content > div:nth-child(even) { background-color: darkblue; color: white; }
+
+.embedded_link { color: orangered; }
+
+table { overflow: visible; }
+
+.content tr { background-color: darkblue; color: white; }
+
+.content tr:nth-child(odd) { background-color: darkgray; color: black; }
+
+.content tr:hover { background-color: orangered; color: black; }
+
+.content td, .content th { text-align: center; padding: 10px 5px; }
+
+.content .feedback_form { width: 100%; }
+
+/* Feedback form specific styling*/
+.feedback_form select { margin: 5px; border-radius: 5px; padding: 5px; }
+
+.feedback_form textarea { width: 100%; margin: 10px 0px; border-width: thick; border-radius: 10px; padding: 5px; }
+
+.feedback_form input[type=text] { margin: 10px 0px; border-width: thick; border-radius: 10px; padding: 5px; }
+
+.feedback_form input[type=submit] { color: white; background-color: darkblue; border-color: darkgray; border-radius: 10px; padding: 15px; }
+
+.modification_date { width: 300px; text-align: center; background-color: darkblue; color: white; margin: 10px auto; padding: 1px 0px; }
+
+/* Footer styling */
+.footer { width: 25%; min-width: 170px; margin: auto; text-align: center; background-color: darkblue; border-radius: 50px 50px 0px 0px; /* Round the upper corners but leave lower one sharp */ padding: 10px; }
+
+/* Responsiveness styling */
+@media only screen and (max-width: 1200px) { .container, .content .single_column, .content .dual_column .column, .content .dual_row, .content .feedback_form { width: 100%; }
+  .content .dual_column { width: 100%; flex-direction: column; /* Also switch column layout to display as two rows. This prevents any images that are displayed on columns from going miniscule when displayed on narrower screen */ } }
+
+@media only screen and (max-width: 800px) { .header { width: 100%; border-radius: 0 0 50px 50px; /* Do what was originally done on footer but mirrored */ }
+  .footer { width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */

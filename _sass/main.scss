@@ -1,0 +1,270 @@
+/* Website wide styling */
+
+* {
+    box-sizing: border-box;
+    font-size: 20px; /* Set the general font size */
+}
+
+body 
+{
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+img 
+{
+    width: 100%;
+    max-width: 1920px; /* Prevents images from being scale up from my own screen size. In other words: any screenshots can't scale larger than their original size */
+}
+
+.container /* Main container for easier re-scaling of the page layout */
+{
+    width: 80%;
+    min-width: 400px;
+    margin: auto;
+}
+
+/* Header styling */
+
+.header /* Header is always on darkblue background with white text and centered on the screen */
+{
+    width: 20%; /* Header uses 20% of the container width OR at minimum 240px */
+    min-width: 240px; /* This is to prevent any word wrapping */
+    margin: auto;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: darkblue;
+}
+
+/* NavBar styling */
+
+.nav_bar ul /* NavBar takes the whole container width, centers the navigation links and wraps them to a new line when the page is narrow enough */
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.nav_bar ul li /* Additional styling for NavBar list */
+{
+    list-style: none;
+    margin: 5px;
+    padding: 10px;
+}
+
+.nav_bar a /* Styling for NavBar Links */
+{
+    text-decoration: none;
+    background-color: darkblue;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+}
+
+.nav_bar a:hover, a:active /* Change color on hover */
+{
+    background-color: lightblue;
+    color: black;
+}
+
+.nav_bar .active_page /* Manually mark a link as currently active */
+{
+    background-color: darkcyan;
+    color: black;
+}
+
+/* Content element styling */
+
+.content /* The container used to hold all content elements. Wraps all elements as a column and keeps them centered */
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content .single_column /* The styling for a single large content box */
+{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: darkgray;
+    color: black;
+}
+
+.content .dual_column /* The styling for a two column content box... */
+{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: darkgray;
+    color: black;
+}
+
+.dual_column .column /* And the columns themselves */
+{
+    width: 50%;
+    padding: 20px;
+}
+
+.content .dual_row /* If we additionally want to divide a content box to two rows... */
+{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: darkgray;
+    color: black;
+}
+
+.dual_row .row /* ...this is better for videos/images */
+{
+    padding: 10px;
+}
+
+.content > div:nth-child(even) /* Styling to get some variety to the page layout */
+{
+    background-color: darkblue;
+    color: white;
+}
+
+.embedded_link /* Color any embedded links orangered */
+{
+    color: orangered;
+}
+
+table
+{
+    overflow: visible;
+}
+
+.content tr /* The base color for table rows is darkblue background and white text */
+{
+    background-color: darkblue;
+    color: white;
+}
+
+.content tr:nth-child(odd) /* Each odd row is instead colored darkgray with black text */
+{
+    background-color: darkgray;
+    color: black;
+}
+
+.content tr:hover /* On hover highlight the row with a different color */
+{
+    background-color: orangered;
+    color: black;
+}
+
+.content td, .content th /* Center and add padding to each cell */
+{
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.content .feedback_form
+{
+    width: 100%;
+}
+
+/* Feedback form specific styling*/
+
+.feedback_form select /* Add some margin/border/padding to selection box */
+{
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.feedback_form textarea /* Styling for longer textfields on feedback page */
+{
+    width: 100%;
+    margin: 10px 0px;
+    border-width: thick;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.feedback_form input[type=text] /* Styling for simple text input on feedback page */
+{
+    margin: 10px 0px;
+    border-width: thick;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.feedback_form input[type=submit] /* Styling for the Submit button on feedback page */
+{
+    color: white;
+    background-color: darkblue;
+    border-color: darkgray;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.modification_date /* Styling for mod date on each page */
+{
+    width: 300px;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    margin: 10px auto;
+    padding: 1px 0px;
+}
+
+/* Footer styling */
+
+.footer /* Footer styling */
+{
+    width: 25%;
+    min-width: 170px;
+    margin: auto;
+    text-align: center;
+    background-color: darkblue;
+    border-radius: 50px 50px 0px 0px; /* Round the upper corners but leave lower one sharp */
+    padding: 10px;
+}
+
+/* Responsiveness styling */
+
+@media only screen and (max-width: 1200px) /* When on narrower screen --> use full available width for main container and all content elements */
+{
+    .container, .content .single_column, .content .dual_column .column, .content .dual_row, .content .feedback_form
+    { 
+        width: 100%; 
+    }
+    
+    .content .dual_column
+    { 
+        width: 100%;
+        flex-direction: column; /* Also switch column layout to display as two rows. This prevents any images that are displayed on columns from going miniscule when displayed on narrower screen */
+    }
+}
+
+@media only screen and (max-width: 800px) /* When going below 800 pixels also scale header and footer to use full width. Basically for mobile since I doubt any PC has a 600x800 screen anymore */
+{
+    .header 
+    { 
+        width: 100%; 
+        border-radius: 0 0 50px 50px; /* Do what was originally done on footer but mirrored */
+    }
+    .footer 
+    { 
+        width: 100%;
+    }
+}
