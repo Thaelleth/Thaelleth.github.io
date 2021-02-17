@@ -4,9 +4,11 @@
   link: /Projects_Overview.html
 - name: Flappy Bird Clone
   link: /Flappy_Bird_Clone.html
-- name: Hovercraft platformer
-  link: /HoverCraft_Platformer.html
 - name: AimTrainer
   link: /AimTrainer.html
 - name: Project X
   link: /Project_X.html
+- name: SR3D
+  link: /SR3D.html
+- name: NoNameGame
+  link: /NoNameGame.html

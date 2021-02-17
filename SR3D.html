@@ -1,0 +1,37 @@
+---
+mod_date: 17.2.2021
+layout: default
+title: My portfolio
+---
+
+<!-- Content section holds all the text, images and other stuff using different layouts: Single column, Dual column and Dual row. These were made to make it easier to create varying pages -->
+<div class="content">
+    <div class="dual_column">
+        <div class="column">
+            <h2> SR3D </h2>
+            <p> Status: Complete <br> Project members: Thaelleth + 1 <br> Genre: Platformer <br> Tags: Platformer, First person, PC<br> Build: <a href="https://drive.google.com/file/d/1mJ-diXx0nq7buwupEMPq-8dWFxCzlHwI/view?usp=sharing" target="_blank"> Windows (28.1.2021) </a>
+            </p>
+        </div>
+        <div class="column">
+            <h3> General information </h3>
+            <p>Started as a quick project to create a simple, extensible platformer that ended up having four (mostly) unique maps and somewhat polished UI. This one is different from previous games in that it was created with <a class="embedded_link" href="https://godotengine.org/" target="_blank">Godot</a>. This presented quite a few challenges with a completely different API compared to the previously used Unity. Additionally some functionality that is present in Unity was nowhere to be seen in Godot. Though on the other hand Godot actually has some pretty nice structuring to it (namely the node system) that Unity could learn from.
+            </p>
+            <p> Instead of using Godot's own Python-style scripting language GDscript we opted to use the more familiar C# that is still in beta. Using C# brought it's own problems. Any changes to script naming or inheritance had to be made through Godot (basically delete old and make a new one). Otherwise we'd risk breaking dependencies and having to manually rewrite config files or rollbacking to earlier commit.
+            </p>
+        </div>
+    </div>
+    <div class="single_column">
+        <h3> Gameplay </h3>
+        <p>This game is a fast(ish) paced platformer where you use different blocks and surfaces to grapple onto and swing forwards. Building up momentum can be a very good idea to achieve maximum speed. Upon reaching the goal platform the level ends and presents the player with their completion time. Since we opted not to host a leaderboard anywhere the only choice to share your time is via some other forum or chat. Local network multiplayer was also added but not extended to a larger scale (mostly because we don't have the resources to easily host anything global). The game provides options to customise hotkeys and some graphics settings. Some bugs are to be expected (we didn't do any extensive testing) but the game should run fairly smoothly.
+        </p>
+        <p> Below is a short gameplay video of one of the two maps that I created. This and Spacestation were mine. The other two were created by my friend.
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wgmpx1RjBRc" frameborder="0"
+            allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="single_column">
+        <h3> Tools </h3>
+        <p> Most of the textures for the game are from <a class="embedded_link" href="https://cc0textures.com/" target="_blank">CC0 Textures</a> and all of the modeling was done with <a class="embedded_link" href="https://www.blender.org/" target="_blank">Blender</a> or Godot primitives. Parts of the UI were created with <a class="embedded_link" href="https://www.gimp.org/" target="_blank">GIMP</a>. The project is hosted (private) in <a class="embedded_link" href="https://github.com/" target="_blank"> Github</a> and script editing was done in <a class="embedded_link" href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>.
+        </p>
+    </div>
+</div>
