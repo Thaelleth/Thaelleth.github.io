@@ -65,10 +65,8 @@ table { overflow: visible; }
 .footer { width: 25%; min-width: 170px; margin: auto; text-align: center; background-color: darkblue; border-radius: 50px 50px 0px 0px; /* Round the upper corners but leave lower one sharp */ padding: 10px; }
 
 /* Responsiveness styling */
-@media only screen and (max-width: 1200px) { .container, .content .single_column, .content .dual_column .column, .content .dual_row, .content .feedback_form { width: 100%; }
-  .content .dual_column { width: 100%; flex-direction: column; /* Also switch column layout to display as two rows. This prevents any images that are displayed on columns from going miniscule when displayed on narrower screen */ } }
+@media only screen and (max-width: 1200px) { .container, .content .single_column, .content .dual_column .column, .content .dual_row, .content .feedback_form { width: 100%; } .content .dual_column { width: 100%; flex-direction: column; /* Also switch column layout to display as two rows. This prevents any images that are displayed on columns from going miniscule when displayed on narrower screen */ } }
 
-@media only screen and (max-width: 800px) { .header { width: 100%; border-radius: 0 0 50px 50px; /* Do what was originally done on footer but mirrored */ }
-  .footer { width: 100%; } }
+@media only screen and (max-width: 800px) { .header { width: 100%; border-radius: 0 0 50px 50px; /* Do what was originally done on footer but mirrored */ } .footer { width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
