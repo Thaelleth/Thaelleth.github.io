@@ -1,0 +1,86 @@
+---
+mod_date: 13.1.2022
+layout: default
+title: My portfolio
+---
+
+<!-- Content section holds all the text, images and other stuff using different layouts: Single column, Dual column and Dual row. These were made to make it easier to create varying pages -->
+<div class="content">
+    <div class="dual_column">
+        <div class="column">
+            <h2> XAMK Game Studios Internship </h2>
+            <p> Status: Complete (for my part) <br> Project members: Thaelleth + 11 <br> Genre: Various <br> Tags:
+                Exploration, Learning, Mobile
+            </p>
+        </div>
+        <div class="column">
+            <h3> General information </h3>
+            <p>This was an over-the-summer internship position as the Lead Coder for a 12 member team. Our goal was to
+                develop two games for separate clients by the end of summer. It didn't go quite as planned, partly
+                because we couldn't get proper contact with both clients and partly because there was just too much work
+                for mere three and a half months with such a small and inexperienced team.
+            </p>
+            <p>The general team composition was six coders (excluding me), three leads/managers (including me), two
+                artists and one tester. Most of the work was conducted completely remotely. Some odd meetings here and
+                there, escpecially with the clients, were local.
+            </p>
+            <p>Most of my work was on managing the coders' work and writing the tasks for them. We had a separate Kanban
+                board on <a class="embedded_link" href="https://trello.com/" target="_blank">Trello</a> for tracking
+                task progress while the actual files were stored in a <a class="embedded_link"
+                    href="https://github.com/" target="_blank">Github</a> repository. The games themselves were made
+                with <a class="embedded_link" href="https://unity.com/" target="_blank">Unity</a>.
+            </p>
+        </div>
+    </div>
+    <div class="single_column">
+        <h3> The games </h3>
+        <p>Our first project, and the one we had better client involvement in, was to create a city exploration game for
+            mobile platforms, targeted mostly at children under the age of 10. The main idea was to get children
+            exploring a city and moving while doing so. We started with a pretty ambitious idea that was ultimately cut
+            down to remove features and make it safer for the children.
+        </p>
+        <p>Our second project was to make a game that could teach children the basics of programming, playable in
+            (theoretically) any browser. Our first client contact was AFTER the initial internship had already ended and
+            most of us were working extra to get practice hours for our studies. The game wasn't as much for teaching
+            programming in a specific language as it was for introducing the player to some of the main principles of
+            programming and the concept of applying logic in specified chuncks to get the desired behaviour.
+        </p>
+        <div class="dual_column">
+            <div class="column">
+                <h3> Mobile exploration/excercise game </h3>
+                <p>This game ended up being constrained to a specific part of a city for added safety. The general gist
+                    of it is that there are markers on a map that you can physically go to (GPS tracking on) and do
+                    some tasks that are configurable by the user. By default only easy tasks were on. Things that,
+                    theoretically, anyone should be able to do.
+                </p>
+                <p>GPS tracking part is what is supposed to get children to move. Of course there is a disclaimer right
+                    after splash screen that basically says that any exploration should be done under adult supervision.
+                    Also all loading screens (that aren't truly necessary) have a short reminder about being aware of
+                    your surroundings.
+                </p>
+                <p>The map markers are predefined and the locations can be chosen fairly accurately. From what I last
+                    saw/heard the player should be within 50 m from a marker to access it, so they don't need to be
+                    right at the marker, but nearby. This allowed us to pick locations that are either historically
+                    significant or otherwise nice to visit. Also, we obviously only picked locations that are actually
+                    safe for children.
+                </p>
+            </div>
+            <div class="column">
+                <h3> Coding game </h3>
+                <p>This game is basically a Tower Defense but with elements that introduce some programming or
+                    logic concepts to the game.
+                </p>
+                <p>Towers can be configured to act according to conditions (basically
+                    boolean logic). There's also a character, that collects resources, that can be "programmed" to move
+                    according to a set of commands (order of operations, command pattern).
+                </p>
+                <p>Lastly there's a bit of metagame that I personally had no direct part in that is supposed to be for
+                    the more artistic children. Basically it's a list of rules that the children should follow on
+                    creating art for the game. If fully realized, this would end up with the submissions coming to the,
+                    at that point in time, project team who then choose one of the drawings to be a winner. The winning
+                    drawing then, theoretically, gets implemented into the game in some way.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

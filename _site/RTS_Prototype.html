@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Portfolio">
+        <meta name="description" content="Portfolio website for Game Projects made during studies">
+        <meta name="author" content="Koivula, Aki">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> My portfolio </title>
+        <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- All things header -->
+<div class="header">   
+    <h1> My portfolio </h1>
+    <h3> Projects thus far </h3>
+</div>
+            <!-- Navigation bar to help with navigating the website -->
+<div class="nav_bar">
+    <ul>
+        
+        <li> <a href="/index.html" > Home </a> </li>
+        
+        <li> <a href="/Projects_Overview.html" > Projects Overview </a> </li>
+        
+        <li> <a href="/Flappy_Bird_Clone.html" > Flappy Bird Clone </a> </li>
+        
+        <li> <a href="/AimTrainer.html" > AimTrainer </a> </li>
+        
+        <li> <a href="/Project_X.html" > Project X </a> </li>
+        
+        <li> <a href="/SR3D.html" > SR3D </a> </li>
+        
+        <li> <a href="/NoNameGame.html" > NoNameGame </a> </li>
+        
+        <li> <a href="/XAMK_Game_Studios.html" > XAMK Game Studios </a> </li>
+        
+        <li> <a href="/RTS_Prototype.html"  class="active_page"> RTS Prototype </a> </li>
+        
+    </ul>
+</div>
+            <!-- Content section holds all the text, images and other stuff using different layouts: Single column, Dual column and Dual row. These were made to make it easier to create varying pages -->
+<div class="content">
+    <div class="dual_column">
+        <div class="column">
+            <h2> RTS Prototype (working title) </h2>
+            <p> Status: Active <br> Project members: Thaelleth <br> Genre: RTS <br> Tags: RTS, Prototype
+            </p>
+        </div>
+        <div class="column">
+            <h3> General information </h3>
+            <p>This prototype is more of a learning opportunity where the main idea is to try and replicate some of the
+                mechanics that I've seen and liked in some RTS games. This also allows me to delve more deeply into
+                <a class="embedded_link" href="https://unity.com/" target="_blank">Unity</a> and C# features like
+                inheritance, interfaces and polymorphism. The UI will, once I get to it,
+                probably be quite a challenge since it needs to adapt to show basically any kind of Entity information.
+            </p>
+            <p>I'm compiling an Utilities class that will hold a collection of general purpose methods that can be used
+                elsewhere to make code more readable. Once I'm done with this prototype I might publish the Utilities
+                class somewhere (Github Gists?) and add a link to it here. It'll hold stuff for getting a certain
+                component from a monobehaviour, or getting a world point based on cursor screen position for example.
+            </p>
+        </div>
+    </div>
+    <div class="dual_column">
+        <div class="column">
+            <h3> Current features </h3>
+            <p>The prototype currently has no UI so all commands must be given through hotkeys. Units can be commanded
+                to move, patrol or attack. There's a specialized Worker Unit that can be used to gather resources or
+                build structures. Structures can then be used to spend resources on creating more units.
+            </p>
+        </div>
+        <div class="column">
+            <h3>Future plan</h3>
+            <p>The next target is looking for bugs, testing all the systems thoroughly to straighten out all the kinks I
+                might find. After that I'll probably work on that UI. Nothing fancy of course, just something
+                functional and simple.
+            </p>
+            <p>There's no plan to make this into a proper project any time soon. This is mainly because of the scope of
+                creating a fully fledged RTS. I'd have to work on Unit design, story, balancing... basically everything
+                on my own. I quite simply don't have all the necessary graphical/audio skills yet to work alone on a
+                project of this scale, at least not if I aim to get the end result that I'd want. I'll work on smaller
+                projects to develop those skills before maybe returning to this one some time in the future.
+            </p>
+        </div>
+    </div>
+</div>
+            <!-- Copyright and "contact" -->
+<div class="modification_date">
+    <p> Last modified: 14.1.2022 </p>
+</div>
+<div class="footer">
+    <p> Copyright © 2022 Thaelleth </p>
+</div>
+        </div>
+    </body>
+</html>
